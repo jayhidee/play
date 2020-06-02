@@ -1,0 +1,7 @@
+{
+  "name": "lsdca",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
