@@ -1,0 +1,53 @@
+.nav{
+    width: 80vw;
+    font-size: x-small;
+    margin: 20% auto 20px auto;
+    color: #1b630d;
+    display: block;
+    text-align: center;
+    border: 1px solid #FFF;
+}
+.nav ion-col{
+    background-color: #FFF;
+}
+.nav ion-icon{
+    display: block;
+    font-size: x-large;
+    text-align: center;
+    margin-left: 36%;
+    padding: 10px 0;
+}
+.active{
+    background-color: #1b630d !important;
+    color: #FFF;
+}
+.data{
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    background-color: #FFF;
+    padding: 2em 0.4em;
+}
+.sc-ion-modal-md-h{
+    --background: transparent;
+}
+.id{
+    font-size: larger;
+    font-weight: 700;
+    margin: 0;
+}
+.org{
+    font-size: small;
+    margin: 0;
+}
+.act ion-icon{
+    padding: 0.6em;
+    margin: auto 0.2em;
+    background-color: #1b630da8;
+    color: #FFF;
+    font-weight: bold;
+}
+.cds{
+    width: -webkit-fill-available;
+}

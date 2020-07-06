@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Identity Cards</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="success">
+  <ion-grid class="nav">
+    <ion-row>
+      <ion-col routerLink="/add-card">
+        <ion-icon name="add-outline"></ion-icon>
+        Add Card
+      </ion-col>
+      <ion-col>
+        <ion-icon></ion-icon>
+      </ion-col>
+      <ion-col>
+        <ion-icon></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  <ion-grid class="data">
+    <ion-item *ngFor="let card of cards">
+      <ion-row class="cds">
+        <ion-col size="8">
+          <p class="id">{{card.card_id}}</p>
+          <p class="org">{{card.issuing_organization}}</p>
+        </ion-col>
+      </ion-row>
+    </ion-item>
+  </ion-grid>
+
+</ion-content>

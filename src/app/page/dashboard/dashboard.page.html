@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="success">
+  <ion-grid>
+      <ion-row justify-content-center>
+        <ion-col routerLink="/id-card">
+          <div>
+            <ion-icon name="card-outline"></ion-icon>
+          </div>
+
+          <div class="i-text">
+            Identity Card
+          </div>
+        </ion-col>
+        <ion-col>
+          <div>
+            <ion-icon name="close-outline"></ion-icon>
+          </div>
+
+          <div class="i-text">
+            Restricted Access
+          </div>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row justify-content-center>
+        <ion-col routerLink="/basic-details">
+          <div>
+            <ion-icon name="person-outline"></ion-icon>
+          </div>
+
+          <div class="i-text">
+            Profile
+          </div>
+        </ion-col>
+        <ion-col>
+          <div>
+            <ion-icon name="mail-outline"></ion-icon>
+          </div>
+
+          <div class="i-text">
+            Customer Care
+          </div>
+        </ion-col>
+      </ion-row>
+  </ion-grid>
+</ion-content>

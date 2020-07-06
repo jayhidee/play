@@ -8,7 +8,10 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { AuthInterceptor } from './auth-interceptor';
+import { BarcodeScanner } from '@ionic-native/barcode-scanner/ngx';
+import { ScreenOrientation } from '@ionic-native/screen-orientation/ngx';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,8 +21,10 @@ import { HttpClientModule } from '@angular/common/http';
     StatusBar,
     HttpClientModule,
     SplashScreen,
-
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    BarcodeScanner,
+    ScreenOrientation,
+    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
   ],
   bootstrap: [AppComponent]
 })
